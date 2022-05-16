@@ -19,11 +19,11 @@ class CDRack extends Product
       return $rakPrice;
    }
 
-   public function getDiscount()
+   public function getFinalPrice()
    {
-      // harga diskon = harga - (harga * diskon / 100);
-      $cdDiscount = $this->getPrice() - ($this->getPrice() * $this->discount / 100);
-      return $cdDiscount;
+      // harga - (harga * diskon / 100);
+      $rakFinalPrice = $this->getPrice() - ($this->getPrice() * $this->discount / 100);
+      return $rakFinalPrice;
    }
 
    public function getCapacity()

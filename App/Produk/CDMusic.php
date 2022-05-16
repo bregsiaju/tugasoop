@@ -22,11 +22,15 @@ class CDMusic extends Product
 
    public function getDiscount()
    {
-      // harga - (harga * diskon / 100);
       // tambahan diskon 5%
-      $totalDisc = parent::getDiscount() + 5;
-      $cdDiscount = $this->getPrice() - ($this->getPrice() * $totalDisc / 100);
-      return $cdDiscount;
+      return parent::getDiscount() + 5;
+   }
+
+   public function getFinalPrice()
+   {
+      // harga - (harga * diskon / 100);
+      $cdFinalPrice = $this->getPrice() - ($this->getPrice() * $this->getDiscount() / 100);
+      return $cdFinalPrice;
    }
 
    public function getArtist()

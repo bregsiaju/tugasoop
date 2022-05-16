@@ -43,10 +43,13 @@ section h3 {
    border-radius: 5px;
    margin: 15px;
    flex-direction: row;
+   position: relative;
+   z-index: -10;
 }
 
 .card img {
    width: 100%;
+   position: relative;
 }
 
 .card-info {
@@ -79,13 +82,36 @@ section h3 {
    color: #fff;
 }
 
-.katalog span {
+.card-info span {
    text-decoration: line-through;
    opacity: 0.5;
+}
+
+.discount {
+   background-color: #ff2020;
+   text-align: center;
+   line-height: 40px;
+   width: 40px;
+   height: 40px;
+   color: white;
+   border-radius: 50%;
+   position: absolute;
+   display: inline-block;
+   right: -10px;
+   top: -10px;
+   font-size: small;
 }
 
 hr {
    margin: 8px auto;
    color: #6e386a;
    width: 30%;
+}
+
+footer {
+   margin-top: 95px;
+   background-color:#6e386a;
+   padding: 10px 40px;
+   color: white;
+   text-align: center;
 }

@@ -55,6 +55,10 @@ $daftarProduk = [
             <div class="card">
                <!-- tampilkan cover album -->
                <img src="image/<?php echo $music->getImage(); ?>" alt="cd cover">
+               <!-- label diskon -->
+               <div class="discount">
+                  -<?php echo $music->getDiscount(); ?>%
+               </div>
                <div class="card-info">
                   <!-- cetak nama artis -->
                   <p><?php echo $music->getArtist(); ?></p>
@@ -63,7 +67,7 @@ $daftarProduk = [
                   <!-- cetak genre -->
                   <p><?php echo $music->getGenre(); ?></p>
                   <!-- harga setelah diskon -->
-                  <p>IDR <?php echo $music->getDiscount(); ?>
+                  <p>IDR <?php echo $music->getFinalPrice(); ?>
                      <!-- harga asli + 10% -->
                      <span><?php echo $music->getPrice(); ?></span>
                   </p>
@@ -86,11 +90,15 @@ $daftarProduk = [
             <div class="card">
                <!-- gambar produk -->
                <img src="image/<?php echo $rak->getImage(); ?>" alt="preview rak">
+               <!-- label diskon -->
+               <div class="discount">
+                  -<?php echo $rak->getDiscount(); ?>%
+               </div>
                <div class="card-info">
                   <!-- nama produk -->
                   <h4><?php echo $rak->getName(); ?></h4>
                   <!-- harga setelah diskon -->
-                  <p>IDR <?php echo $rak->getDiscount(); ?>
+                  <p>IDR <?php echo $rak->getFinalPrice(); ?>
                      <!-- harga asli + 15% -->
                      <span><?php echo $rak->getPrice(); ?></span>
                   </p>
@@ -108,6 +116,12 @@ $daftarProduk = [
       </div>
    </section>
    <!-- end daftar produk cd rak -->
+
+   <!-- footer -->
+   <footer>
+      <p>Created by Bregsi Atingsari Julastri / 20081010211</p>
+   </footer>
+   <!-- footer  -->
 </body>
 
 </html>
