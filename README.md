@@ -1,6 +1,6 @@
 ## Implementation of Inheritance Concept on PHP
 
-Case study: CD Music Online Shop
+Case study: CD Music Online Store
 <br>
 I use array to storing data.
 <br><br>
