@@ -20,6 +20,19 @@ $daftarProduk = [
       $rak4 = new CDRack("Wooden Spiral CD Rack", 750000, 20, "rak4.jpg", 25, "Bahan kayu, bentuk unik")
    ]
 ];
+
+// mengubah data dengan setter
+// $cd4->setArtist("(GI)-DLE");
+// $cd1->setPrice(325000);
+// $cd2->setName("Hati-Hati di Jalan");
+// $cd3->setGenre("Jazz");
+// $cd5->setDiscount(10);
+
+// $rak1->setName("Mobil Mewah");
+// $rak2->setPrice(20000);
+// $rak3->setDiscount(50);
+// $rak4->setCapacity(1000);
+// $rak1->setModel("Tidak boleh diinjak");
 ?>
 
 <!DOCTYPE html>
@@ -36,7 +49,7 @@ $daftarProduk = [
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Macondo&family=Patua+One&family=Signika+Negative&display=swap" rel="stylesheet">
 
-   <title>Inheritance</title>
+   <title>CD Store</title>
 </head>
 
 <body>
@@ -125,17 +138,3 @@ $daftarProduk = [
 </body>
 
 </html>
-
-<?php
-// mengubah data dengan setter
-// $cd4->setArtist("(GI)-DLE");
-// $cd1->setPrice(325000);
-// $cd2->setName("Hati-Hati di Jalan");
-// $cd3->setGenre("Jazz");
-// $cd5->setDiscount(10);
-
-// $rak1->setName("Mobil Mewah");
-// $rak2->setPrice(20000);
-// $rak3->setDiscount(50);
-// $rak4->setCapacity(1000);
-// $rak1->setModel("Tidak boleh diinjak");
